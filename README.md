@@ -37,24 +37,28 @@ cd Clinica-Medica
 
 Abra o arquivo index.html no navegador
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/494dcbfc-9498-4c95-837c-f640186ab970" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ecca9734-e446-4e4f-82c6-f220da68efad" />
 
-<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/ef013050-69c0-43d7-ae4b-a74cdfdecf89" />
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/d39c87f3-336d-4981-8650-7a834145ae28" />
 
-<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/1e180646-56ec-414e-a328-e3101f3163d6" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f933330d-5049-4d84-8479-5fac62e2f14d" />
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d5f3ae41-999c-47f8-8b89-03c69ca9c9b9" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/60c07966-c438-4722-8ce5-2de9ee9189bd" />
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f10adb5e-f2d0-493b-834e-5aef6475b337" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/365c4ff9-185e-473a-a96b-54aa3205c453" />
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/9ff91ab2-ef43-4e7f-9b93-94bc6847489b" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/32e8d784-c8fe-4a36-a285-45c4367760ad" />
 
-
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/80417384-8dba-4578-9b97-ab4fb58b9026" />
 
 E conta também com uma parte apenas para admin para cadastrar pacientes, agendar consultas, mostrar as consultas agendadas, marcar exames e uma área para pagamentos
 
-<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/b61a2ed7-b0e8-4fea-b86a-7eb3956d8d91" />
-<img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/36bebad9-fc55-40ab-91c0-53d0d82e9e47" />
-<img width="1913" height="881" alt="image" src="https://github.com/user-attachments/assets/32dbe4a9-5fb7-49c7-9a13-1a8ec06d8cec" />
-<img width="1919" height="903" alt="image" src="https://github.com/user-attachments/assets/a5f02d65-fe6c-4563-bb4b-493dbbb429eb" />
-<img width="1912" height="900" alt="image" src="https://github.com/user-attachments/assets/7859fa51-e6c2-4295-91b3-547e3b416714" />
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/f5a0e644-542a-4101-8c54-15d347426391" />
+
+<img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/09c58afc-fa16-47ba-8ac8-d1ddf2aab068" />
+
+<img width="1913" height="881" alt="image" src="https://github.com/user-attachments/assets/311443e5-9259-4ed4-a41e-106568ad535a" />
+
+<img width="1919" height="903" alt="image" src="https://github.com/user-attachments/assets/82b7f44d-bcf8-4cb9-a5c5-13dcff5ccb31" />
+
+<img width="1912" height="900" alt="image" src="https://github.com/user-attachments/assets/799a403d-708a-44c6-bfd2-f50799277d80" />
