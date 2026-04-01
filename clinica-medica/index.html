@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Saudável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css  " />
+    <link rel="shortcut icon" type="imagex/png" href="imagens/icone.png">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="imagens/icone.png" alt="Logo da Clínica">
+            <h1>Clínica Vida Saudável</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>Cuidando da sua saúde com excelência</h2>
+                    <p>Atendimento médico especializado e humanizado</p>
+                    <a href="consulta.html" class="btn">Agende sua consulta</a>
+                </div>
+            </div>
+            <img src="imagens/medico.png" alt="Médico sorrindo" class="hero-doctor">
+        </section>
+        <section class="services container">
+            <h3>Nossos Serviços</h3>
+            <div class="cards">
+                <div class="card service-card" style="background-image:url('imagens/clinica-geral.jpg')">
+                    <div class="overlay">
+                        <h4>Clínica Geral</h4>
+                        <p>Consultas médicas completas</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/pediatria.jpg')">
+                    <div class="overlay">
+                        <h4>Pediatria</h4>
+                        <p>Atendimento infantil especializado</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/cardiologia.jpg')">
+                    <div class="overlay">
+                        <h4>Cardiologia</h4>
+                        <p>Cuidados com a saúde do coração</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/dermatologia.jpg')">
+                    <div class="overlay">
+                        <h4>Dermatologia</h4>
+                        <p>Cuidados com pele e cabelos</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/ortopedia.jpg')">
+                    <div class="overlay">
+                        <h4>Ortopedia</h4>
+                        <p>Tratamento de ossos e articulações</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/odontologia.jpeg')">
+                    <div class="overlay">
+                        <h4>Odontologia</h4>
+                        <p>Saúde bucal e prevenção</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/neurologia.jpg')">
+                    <div class="overlay">
+                        <h4>Neurologia</h4>
+                        <p>Tratamento de doenças neurológicas</p>
+                    </div>
+                </div>
+                <div class="card service-card" style="background-image:url('imagens/psicologia.jpg')">
+                    <div class="overlay">
+                        <h4>Psicologia</h4>
+                        <p>Suporte emocional e psicológico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team container">
+            <h3>Nossa Equipe</h3>
+            <div class="cards team-grid">
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dr. João Silva</h4>
+                        <p>Clínico Geral</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dra. Maria Oliveira</h4>
+                        <p>Pediatra</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dr. Carlos Souza</h4>
+                        <p>Cardiologista</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dra. Ana Martins</h4>
+                        <p>Dermatologista</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dr. Paulo Mendes</h4>
+                        <p>Ortopedista</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dra. Lúcia Santos</h4>
+                        <p>Odontologista</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dr. Felipe Almeida</h4>
+                        <p>Neurologista</p>
+                    </div>
+                </div>
+                <div class="card team-card">
+                    <div class="overlay">
+                        <h4>Dra. Carla Ribeiro</h4>
+                        <p>Psicóloga</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials container">
+            <h3>Depoimentos</h3>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <p>"Excelente atendimento, recomendo!"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Profissionais muito competentes."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Minha família toda consulta aqui."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Ambiente acolhedor e organizado."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Fui muito bem atendida, voltarei sempre."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Médicos atenciosos e dedicados."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Consulta rápida e eficaz."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Médicos muito profissionais"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Clínica moderna e com ótima estrutura."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Equipe simpática e profissional."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Recomendo para todos os meus amigos."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Estrutura impecável e atendimento humanizado."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"A clínica oferece um serviço diferenciado."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        </section>
+        <section class="map container">
+            <h3>Onde Estamos</h3>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Clínica Vida Saudável - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mapContainer = document.getElementById('map');
+            if (mapContainer) {
+                var map = L.map('map').setView([-22.9365, -43.1790], 15);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+                L.marker([-22.9365, -43.1790]).addTo(map)
+                    .bindPopup('Clínica Vida Saudável - Flamengo, RJ')
+                    .openPopup();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

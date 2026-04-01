@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Vida Saudável</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="icone.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icone.png" alt="Logo da Clínica">
+      <h1>Clínica Vida Saudável</h1>
+    </div>
+
+    <div class="menu">
+      <a href="#cadastro-paciente"><i class="fas fa-user-plus"></i> Cadastrar Paciente</a>
+      <a href="#agendar-consulta"><i class="fas fa-calendar-check"></i> Agendar Consulta</a>
+      <a href="#consultas"><i class="fas fa-list"></i> Consultas</a>
+      <a href="#exames"><i class="fas fa-microscope"></i> Exames</a>
+      <a href="#pagamentos"><i class="fas fa-credit-card"></i> Pagamentos</a>
+    </div>
+
+    <div id="cadastro-paciente" class="form-container">
+      <h2>Cadastrar Paciente</h2>
+      <form id="form-paciente">
+        <input type="text" id="nome-paciente" placeholder="Nome Completo" required>
+        <input type="text" id="cpf-paciente" placeholder="CPF" required>
+        <input type="date" id="data-nascimento-paciente" required>
+        <input type="tel" id="telefone-paciente" placeholder="Telefone" required>
+        <input type="email" id="email-paciente" placeholder="E-mail" required>
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+
+    <div id="agendar-consulta" class="form-container">
+      <h2>Agendar Consulta</h2>
+      <form id="form-consulta">
+        <select id="paciente-consulta" required>
+          <option value="">Selecione o Paciente</option>
+        </select>
+        <select id="medico-consulta" required>
+          <option value="">Selecione o Médico</option>
+          <option value="Dr. João Silva - Clínico Geral">Dr. João Silva - Clínico Geral</option>
+          <option value="Dra. Maria Oliveira - Pediatra">Dra. Maria Oliveira - Pediatra</option>
+          <option value="Dr. Carlos Souza - Cardiologista">Dr. Carlos Souza - Cardiologista</option>
+          <option value="Dra. Ana Martins - Dermatologista">Dra. Ana Martins - Dermatologista</option>
+          <option value="Dr. Paulo Mendes - Ortopedista">Dr. Paulo Mendes - Ortopedista</option>
+          <option value="Dra. Lúcia Santos - Odontologista">Dra. Lúcia Santos - Odontologista</option>
+          <option value="Dr. Felipe Almeida - Neurologista">Dr. Felipe Almeida - Neurologista</option>
+          <option value="Dra. Carla Ribeiro - Psicóloga">Dra. Carla Ribeiro - Psicóloga</option>
+        </select>
+        <input type="datetime-local" id="data-consulta" required>
+        <textarea id="descricao-consulta" placeholder="Descrição do Motivo" required></textarea>
+        <button type="submit">Agendar</button>
+      </form>
+    </div>
+
+    <div id="consultas" class="form-container table-container">
+      <h2>Consultas Agendadas</h2>
+      <table id="tabela-consultas" style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background-color:#043464; color:white;">
+            <th style="padding:8px; border:1px solid #ccc;">Paciente</th>
+            <th style="padding:8px; border:1px solid #ccc;">Médico</th>
+            <th style="padding:8px; border:1px solid #ccc;">Data</th>
+            <th style="padding:8px; border:1px solid #ccc;">Motivo</th>
+            <th style="padding:8px; border:1px solid #ccc;">Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="exames" class="form-container">
+      <h2>Solicitar Exame</h2>
+      <form id="form-exame">
+        <select id="paciente-exame" required>
+          <option value="">Selecione o Paciente</option>
+        </select>
+        <select id="tipo-exame" required>
+          <option value="">Selecione o Tipo de Exame</option>
+          <optgroup label="Clínico Geral">
+            <option value="Hemograma">Hemograma</option>
+            <option value="Glicemia">Glicemia</option>
+            <option value="Urina">Exame de Urina</option>
+            <option value="Eletrocardiograma">Eletrocardiograma</option>
+          </optgroup>
+          <optgroup label="Pediatra">
+            <option value="Testes de Desenvolvimento">Testes de Desenvolvimento</option>
+            <option value="Vacinas">Vacinas</option>
+          </optgroup>
+          <optgroup label="Cardiologista">
+            <option value="Eletrocardiograma">Eletrocardiograma</option>
+            <option value="Ecocardiograma">Ecocardiograma</option>
+            <option value="MAPA">MAPA</option>
+          </optgroup>
+          <optgroup label="Dermatologista">
+            <option value="Biópsia">Biópsia</option>
+            <option value="Cultura de Pele">Cultura de Pele</option>
+            <option value="Exame de Lesão">Exame de Lesão</option>
+          </optgroup>
+          <optgroup label="Ortopedista">
+            <option value="Raio-X">Raio-X</option>
+            <option value="Ressonância Magnética">Ressonância Magnética</option>
+            <option value="Tomografia">Tomografia</option>
+          </optgroup>
+          <optgroup label="Odontologista">
+            <option value="Radiografia Dental">Radiografia Dental</option>
+            <option value="Perfil Facial">Perfil Facial</option>
+          </optgroup>
+          <optgroup label="Neurologista">
+            <option value="EEG">EEG</option>
+            <option value="RMN">RMN</option>
+            <option value="EMG">EMG</option>
+          </optgroup>
+          <optgroup label="Psicóloga">
+            <option value="Teste Psicológico">Teste Psicológico</option>
+            <option value="Avaliação Cognitiva">Avaliação Cognitiva</option>
+          </optgroup>
+        </select>
+        <textarea id="resultado-exame" placeholder="Resultado do Exame"></textarea>
+        <button type="submit">Solicitar Exame</button>
+      </form>
+    </div>
+
+
+    <div id="pagamentos" class="form-container">
+      <h2>Realizar Pagamento</h2>
+      <form id="form-pagamento">
+        <select id="paciente-pagamento" required>
+          <option value="">Selecione o Paciente</option>
+        </select>
+        <input type="number" id="valor-pagamento" placeholder="Valor" required>
+        <select id="tipo-pagamento" required>
+          <option value="">Selecione o Tipo de Pagamento</option>
+          <option value="Cartão de Crédito">Cartão de Crédito</option>
+          <option value="Cartão de Débito">Cartão de Débito</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="PIX">PIX</option>
+        </select>
+        <input type="date" id="data-pagamento" required>
+        <select id="status-pagamento" required>
+          <option value="">Selecione o Status</option>
+          <option value="Concluído">Concluído</option>
+          <option value="Pendente">Pendente</option>
+          <option value="Cancelado">Cancelado</option>
+        </select>
+        <button type="submit">Registrar Pagamento</button>
+      </form>
+    </div>
+
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

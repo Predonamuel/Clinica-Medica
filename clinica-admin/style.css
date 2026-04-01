@@ -1,0 +1,243 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00695c;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/7596/7596871.png');
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  opacity: 0.08;
+  z-index: 1;
+}
+
+.header img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  z-index: 2;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 30px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #004d40;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #e0f2f1;
+  width: 120px;
+  margin: 5px;
+}
+
+.menu a i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00897b;
+}
+
+.menu a:hover {
+  background-color: #00695c;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 105, 92, 0.3);
+}
+
+.menu a:hover i {
+  color: white;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  max-width: 1200px;
+  display: none;
+}
+
+.form-container h2 {
+  color: #004d40;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #004d40;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #043464;
+  color: white;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 1024px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a {
+    width: 45%;
+    margin: 5px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .header img {
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    width: 48%;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container textarea,
+  .form-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  table th,
+  table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu a {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .header img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container textarea,
+  .form-container button {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  table th,
+  table td {
+    font-size: 10px;
+    padding: 4px;
+  }
+}
