@@ -6,6 +6,7 @@ Clínica Vida Saudável
 Projeto de um site responsivo para uma clínica médica fictícia, desenvolvido com HTML, CSS e JavaScript. A aplicação simula um sistema real de atendimento, permitindo navegação entre páginas institucionais, contato e agendamento de consultas.
 
  Funcionalidades
+ 
  Página inicial com apresentação da clínica
  Página “Sobre” com informações institucionais
  Página de contato funcional
@@ -14,6 +15,7 @@ Projeto de um site responsivo para uma clínica médica fictícia, desenvolvido 
  Design responsivo (mobile e desktop)
  
  Tecnologias Utilizadas
+ 
  HTML5
  CSS3
  JavaScript
@@ -29,10 +31,13 @@ Estruturação de páginas web
 Responsividade
 
  Como Executar o Projeto
+ 
 Clone o repositório:
+
 git clone https://github.com/Predonamuel/Clinica-Medica.git
 
 Acesse a pasta:
+
 cd Clinica-Medica
 
 Abra o arquivo index.html no navegador
